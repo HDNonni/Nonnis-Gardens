@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  background-color: rgb(226, 226, 202);
+}
+.gardenName{
+  text-align: center;
+}
+.container{
+  display: flex;
+  /* flex-direction: column; */
+}
+.grid-container {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: linen;
+}
+.grid-item {
+  background-color: yellow;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* padding: 5px; */
+  font-size: 10px;
+  text-align: center;
+}
+
+.gridImages{
+  height:270px;
+  width:400px;
+}
+.pageImage{
+  height:370px;
+  width:500px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
+}
+.pageImageSummer{
+  text-align: right;
+  margin-top: 65px;
+}
+.flowerName{
+  font-size: 1.15rem;
+  margin-left: 35px;
+}
+.rose{
+  margin-top: 15px;;
+}
+.flexColumn1{
+  /* flex-direction: row; */
+  flex-wrap: nowrap;
+}
+.flexColumn2{
+  flex-direction: row;
+}
+.smallImage{
+  width:150px;
+  height: 100px;
+  border-radius: 5px;
+}
+.smallImage:hover{
+  width:250px;
+  height:200px;
+}
+.list{
+  list-style: none;
+}
+
+
+@media(max-width: 888px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
