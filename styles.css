@@ -5,6 +5,14 @@
 .gardenName{
   text-align: center;
 }
+.heading{
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+.simpleNav{
+  text-align: right;
+}
 .container{
   display: flex;
   /* flex-direction: column; */
@@ -17,10 +25,10 @@
   background-color: linen;
 }
 .grid-item {
-  background-color: yellow;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgb(219, 219, 166);
+  border: 1px solid rgba(59, 58, 58, 0.8);
   /* padding: 5px; */
-  font-size: 10px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -65,6 +73,9 @@ box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
 }
 .list{
   list-style: none;
+}
+.center{
+  text-align: center;
 }
 
 
