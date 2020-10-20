@@ -59,6 +59,7 @@ box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
 .flowerName{
   font-size: 1.15rem;
   margin-left: 35px;
+  margin-top:20px;
 }
 .topMargin{
   margin-top:35px;
@@ -105,6 +106,15 @@ box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
 }
 .ovalVideo{
   margin:150px 5px 0 10px;
+}
+.woods{
+  font-size:1.5rem;
+  text-align:center;
+  font-weight:bold;
+  margin:0 155px;
+}
+.rearFence{
+  width:60%;
 }
 
 @media(max-width: 888px){
