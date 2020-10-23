@@ -1,21 +1,60 @@
-*{
+* {
   box-sizing: border-box;
   background-color: rgb(226, 226, 202);
+  margin:0;
 }
-.gardenName{
+.gardenName {
   text-align: center;
 }
-.heading{
-  text-align: center;
-  font-size: 34px;
-  font-weight: bold;
-}
-.simpleNav{
-  text-align: right;
-}
-.container{
+.header {
+  background-color:transparent;
   display: flex;
-  /* flex-direction: column; */
+ 
+}
+.heading {
+  font-size: 45px;
+  font-weight: bold;
+  margin:0;
+  background-color: green;
+  padding: 15px 0;
+}
+.nav {
+  background-color: green;
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  align-items: flex-end;
+  color:lightyellow;
+}
+.expander {
+  flex-grow: 1;
+}
+.copy {
+  background-color: green;
+  color:lightyellow;
+  padding-right:15px;
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+.simpleNav a{
+  background-color: green;
+  color:lightyellow;
+  padding-left:15px;
+  font-size: 18px; 
+} 
+.simpleNav a:hover{
+  font-size: 20px;
+}
+.container {
+  display: flex;
+}
+.imageHeading{
+  padding:20px 0 0 20px;
+}
+.info{
+  font-size:18px;
+  padding: 5px 0 10px 20px;
+
 }
 .grid-container {
   display: grid;
@@ -32,95 +71,97 @@
   text-align: center;
 }
 
-.gridImages{
-  height:270px;
-  width:400px;
+.gridImages {
+  height: 270px;
+  width: 400px;
 }
-.pageImage{
-  height:370px;
-  width:500px;
+.pageImage {
+  height: 370px;
+  width: 500px;
+  margin-left:15px;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
 }
-.pageImageSummer{
+.pageImageSummer {
   text-align: center;
   margin-top: 65px;
 }
-.summer{
-  margin-top:0;
+.summer {
+  margin-top: 0;
 }
-.blurb{
+.blurb {
   font-size: 1.25rem;
-  padding-top:25px;
-  color:purple;
+  padding-top: 25px;
+  color: purple;
 }
-.flowerName{
+.flowerName {
   font-size: 1.15rem;
   margin-left: 35px;
-  margin-top:20px;
+  margin-top: 20px;
 }
-.topMargin{
-  margin-top:35px;
+.topMargin {
+  margin-top: 35px;
 }
-.rose{
-  margin-top: 15px;;
+.rose {
+  margin-top: 15px;
 }
-.containerStyle{
+.containerStyle {
   margin-top: 25px;
 }
-.clipart{
+.clipart {
   margin: 65px 0 0 100px;
-  height:200px;
-  width:250px;
+  height: 200px;
+  width: 250px;
   border-radius: 5px;
 }
-.tools{
-  height:250px;
-  width:200px;
-  border-radius:5px;
-  margin:70px 0 0 50px;
+.tools {
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 70px 0 0 50px;
 }
-.flexColumn1{
+.flexColumn1 {
   /* flex-direction: row; */
   flex-wrap: nowrap;
+  margin-right: 45px;
 }
-.flexColumn2{
+.flexColumn2 {
   flex-direction: row;
+  padding-right: 25px;
 }
-.smallImage{
-  width:150px;
+.smallImage {
+  width: 150px;
   height: 100px;
   border-radius: 5px;
 }
-.smallImage:hover{
-  width:250px;
-  height:200px;
+.smallImage:hover {
+  width: 250px;
+  height: 200px;
 }
-.list{
+.list {
   list-style: none;
 }
-.center{
+.center {
   text-align: center;
 }
-.ovalVideo{
-  margin:150px 5px 0 10px;
+.ovalVideo {
+  margin: 150px 5px 0 10px;
 }
-.woods{
-  font-size:1.5rem;
-  text-align:center;
-  font-weight:bold;
-  margin:0 155px;
+.woods {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 155px;
 }
-.rearFence{
-  width:60%;
+.rearFence {
+  width: 60%;
 }
 
-@media(max-width: 888px){
-  .container{
+@media (max-width: 888px) {
+  .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-
