@@ -51,6 +51,10 @@
 .imageHeading{
   padding:20px 0 0 20px;
 }
+.bottomImg{
+  padding-top:40px;
+  padding-left:15px;
+}
 .info{
   font-size:18px;
   padding: 5px 0 10px 20px;
@@ -59,9 +63,14 @@
 .grid-container {
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(155px,1fr));
+  grid-template-rows: repeat(auto-fit);
+  
+  grid-auto-flow:dense;
   background-color: linen;
+  padding-top: 60px;
+  margin:10px 10px 0 10px;
+  overflow: hidden;
 }
 .grid-item {
   background-color: rgb(219, 219, 166);
@@ -79,6 +88,14 @@
   height: 370px;
   width: 500px;
   margin-left:15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 8px 5px 0px rgba(51, 51, 51, 0.75);
+}
+.pageImageToo{
+  height: 370px;
+  width: 500px;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -122,10 +139,16 @@
   border-radius: 5px;
   margin: 70px 0 0 50px;
 }
+.tools1 {
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 20px 0 50px 70px;
+}
 .flexColumn1 {
   /* flex-direction: row; */
   flex-wrap: nowrap;
-  margin-right: 45px;
+  margin-right: 25px;
 }
 .flexColumn2 {
   flex-direction: row;
@@ -157,6 +180,10 @@
 }
 .rearFence {
   width: 60%;
+}
+.extraNotes{
+  list-style: none;
+  font-size: 20px;
 }
 
 @media (max-width: 888px) {
